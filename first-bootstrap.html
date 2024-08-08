@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> UST-Trivandrum </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel ="first-bootstrap.css"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </head>
-<body align="center">
+<body class = "p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 text-center">
     <h1 align = "left"> U S <br>T&nbsp;&nbsp;<span style ="font-size:30px;">&#9632;</span></h1>
     <h1 id="#Top">Types of tags in html </h1>
     <a href="#bottom">Go Bottom</a>
-    <table border="2">
-        <tr>
+    <table class = "table table-bordered align-middle">
+        <tr class="table-secondary">
             <td>
                 <h2>Container Tags</h2>
                 Container Tags - Which don't have their own content. Examples like <ul><li>table</li> <li>body</li> <li>head</li><li>div</li></ul>
@@ -32,11 +36,11 @@
                 Tags have attributes - Examples <ul><li>table</li><li>id</li><li>class</li></ul>
             </td>
         </tr>
-        <tr>
+        <tr class="table-info">
             <td>
                 <h2>Heading Tags</h2>
                 <table border="2">
-                    <tr>
+                    <tr class="table-warning">
                         <td><h1>h1 tag</h1></td>
                         <td><h2>h2 tag</h2></td>
                         <td><h3>h3 tag</h3></td>
@@ -60,11 +64,11 @@
             </td>
             <td>
                 <h2>Anchor Tags</h2>
-                &lt;a&gt; &lt;/a&gt; <a href="https://www.google.com">Click to Search</a>
+                &lt;a&gt; &lt;/a&gt; <a class="btn btn-primary"href="https://www.google.com">Click to Search</a>
             </td>
         </tr>
 
-        <tr>
+        <tr class="table-success">
             <td>
                 <h2>Ordered Lists (Numeric)</h2>
                 <ol type="1">
@@ -118,7 +122,7 @@
         </tr>
     
 
-            <tr>
+        <tr class="table-danger">
                 <td>
                     <h2>Image Tag</h2>
                     &lt;img /&gt;<br/> <img src="html.jpg" width="100" height="100" alt="HTML"/>
@@ -140,7 +144,7 @@
                     <figure><img src="html.jpg"  width="100" height="100" alt="Image not rendering">Learn HTML in One Day</figure>
                 </td>
             </tr>
-        <tr>   
+            <tr class="table-warning">  
             <td>
                 <h2>Container Tags Example</h2>
                 <div class="container">
@@ -221,7 +225,7 @@
                 </main>
             </td>
         </tr>
-        <tr>
+        <tr class="table-info">
             <form action="" name="myform">
             <td><label for="calender">Choose DOB: </label><input type="date" name="calender" id="mycal"></td>
             <td><label for="mytime">Enter Time:  </label><input type="time" name="time1" id="mytime"></td>
@@ -229,15 +233,15 @@
             <td><label for="myint">Enter age:  </label><input type="number" name="age" id="myint"></td>
             <td><label for="myemail">Enter your mail: </label><input type="email" name="email" id="myemail"></td>
         </form></tr>
-        <tr>
-            <td><input type = "range" min="10" max="100" ></td>
+        <tr class="table-success">
+            <td><input type = "range" class="form-range" min="10" max="100" ></td>
             <td><input type = "search" name="" id=""></td>
-            <td><input type = "color"  name="" id="" ></td>
-            <td><input type = "button"  value="Click" ></td>
+            <td><input type = "color" class="form-control-form-color" name="" id="" ></td>
+            <td><input type = "button" <input class="btn btn-primary" type="submit" value="Submit"> Submit </td>
             <td>Uplaod file :<input type = "file"  name="" id="" ></td>
         </tr>
 
-        <tr>
+        <tr class="table-secondary">
             <td>CheckBoxes : MTech <input type="checkbox" name="mtech" id="mtech">
                              MSC <input type="checkbox" name="msc" id="msc">
                              MBA   <input type="checkbox" name="mba" id="mba">
@@ -249,7 +253,7 @@
                                 BE <input type="radio"  name="grad"  value="be" id="be">
             </td>
 
-            <td><SELECT> 
+            <td><SELECT class="form-select" aria-label="Default select example"> 
             <OPTION >ITEMS1</OPTION>
             <OPTION>ITEMS2</OPTION>
             <OPTION>ITEMS3</OPTION>
@@ -260,7 +264,7 @@
         </SELECT></td>
             <!-- select>option[value="item$"]*5>{item$} value is attached to options -->
              <td>
-                <select name="" id="" mutliple>
+                <select class="form-select" aria-label="Default select example" name="" id="" mutliple>
                     <option value="item1">item1</option>
                     <option value="item2">item2</option>
                     <option value="item3">item3</option>
@@ -271,7 +275,7 @@
 
                 <td>
                      Description :
-                    <textarea name="" id="" cols="30" rows="10" maxlength="100"></textarea>
+                    <textarea name="" id="" class="from-control" cols="30" rows="10" maxlength="100"></textarea>
                 </td>
 
         </tr>
